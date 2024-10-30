@@ -18,19 +18,68 @@ This lab stands to prepare the moderngl development environment. Below the steps
     - https://github.com/moderngl/moderngl
     - https://moderngl.readthedocs.io/
 
-## How to run your program
 
+## How to Run the Program
+
+To run the program, follow these steps:
+
+### 1. Set Up a Virtual Environment
+
+First, create a virtual environment to manage dependencies.
+
+```bash
+python3 -m venv venv
 ```
-# Update this section with instructions on how to run your programs. 
 
-# Consider that these instructions will be executed 
-in a completely new linux-based machine (Ubuntu 22.04),
-so, instructions for dependencies installation must be added.
+### 2. Activate the Virtual Environment
 
-# It's highly recommended to use python virtual envs. 
-You may take a look on:
-https://docs.python.org/3/library/venv.html
+Activate the virtual environment:
+
+- On **macOS/Linux**:
+  ```bash
+  source venv/bin/activate
+  ```
+- On **Windows**:
+  ```bash
+  venv\Scripts\activate
+  ```
+
+### 3. Install the Requirements
+
+With the virtual environment activated, install the necessary dependencies by running:
+
+```bash
+pip install -r requirements.txt
 ```
+
+### 4. Run the Programs
+
+After setting up the environment and installing the dependencies, you can run each of the programs individually.
+
+```bash
+# Run the Hello World program
+python3 01_hello_world.py
+
+# Run the Multiple Objects program
+python3 06_multiple_objects.py
+
+# Run the Models and Images program
+python3 09_models_and_images.py
+```
+
+Make sure to replace `python3` with `python` if you are on Windows and using the `python` command.
+
+---
+
+### Troubleshooting
+
+- **Dependency Issues**: If you encounter errors related to missing libraries or versions, ensure all dependencies are correctly listed in `requirements.txt`.
+- **Virtual Environment Activation**: If the `source venv/bin/activate` command does not work, ensure you're in the project directory and that the `venv` folder exists.
+
+---
+
+Enjoy running your programs!
+
 
 ## Grading Policy
 
